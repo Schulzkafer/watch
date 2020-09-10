@@ -1,0 +1,264 @@
+* {
+  padding:0;
+  margin:0;
+}
+.wallpaper {
+  height:100vh;
+  width:100%;
+  background-color:pink;
+}
+
+
+      .blockColor {
+        border-radius:4px;
+       background-color: #8B4513;
+       z-index:100;
+              }
+
+              .square {
+                position:relative;
+                height:300px;
+                width:250px;
+                top:150px;
+                left:200px;
+                background-color: #CD853F;
+                border-radius:0 0 10px 10px;
+              }
+
+              .triangle {
+                position:relative;
+                top:150px;
+                left:185px;
+                width: 0;
+  height: 0;
+  border-left: 140px solid transparent;
+  border-right: 140px solid transparent;
+  border-bottom: 100px solid #CD853F;
+              }
+
+.hole {
+  position:absolute;
+  top:60px;
+  left:-20px;
+  height:50px;
+  width:40px;
+  border-radius:20px 20px 4px 4px;
+  background-color:#FFFFF0;
+  z-index:444;
+}
+.door {
+  position:absolute;
+  top:60px;
+  left:-20px;
+  height:50px;
+  width:40px;
+  border-radius:20px 20px 4px 4px;
+  background-color:#DEB887;
+  z-index:555;
+  transition: all 0.5s ease-out;
+  transform-origin: left center;
+  transition: background-color 0.25s linear 0.25s:
+}
+
+
+
+
+
+.top-left-block {
+    position:absolute;
+  top:85px;
+  left:260px;
+height:210px;
+width:20px;
+ background-color: #A0522D;
+  transform: rotate(55deg);
+/* z-index:100;*/
+}
+.top-right-block {
+    position:absolute;
+  top:85px;
+  left:370px;
+height:210px;
+width:20px;
+ background-color: #A0522D;
+  transform: rotate(-55deg);
+/* z-index:100;*/
+}
+.bottom-block {
+      position:absolute;
+  top:370px;
+  left:315px;
+height:280px;
+width:20px;
+ background-color: #A0522D;
+ transform: rotate(90deg);
+}
+.circle {
+  position:absolute;
+  top:50px;
+  left:50px;
+  height:150px;
+  width:150px;
+  border-radius:50%;
+  background-color: #D2691E;
+}
+.hour-arrow {
+  position:absolute;
+  top:40px;
+  left:72.5px;
+  height:40px;
+  width:10px;
+  border-radius:2px;
+  background-color: #FFFFFF;
+/*    transform: rotate(180deg);*/
+/*  animation: hour 216000s infinite steps(60);*/
+  transform-origin: bottom center;
+}
+
+.minutes-arrow {
+  position:absolute;
+  top:30px;
+  left:75px;
+  height:50px;
+  width:5px;
+  border-radius:2px;
+  background-color: #FFFFFF;/* #F5DEB3;*/
+  /*animation: min 3600s infinite steps(60);*/
+  transform-origin: bottom center;
+}
+.seconds-arrow {
+  position:absolute;
+  top:20px;
+  left:76.5px;
+  height:60px;
+  width:3px;
+  border-radius:2px;
+  background-color: #F5DEB3;/* #F5DEB3;*/
+ /* animation: sec 60s infinite steps(60);*/
+  transform-origin: bottom center;
+}
+
+.center {
+  position:absolute;
+  top:65px;
+  left:65px;
+  height:25px;
+  width:25px;
+  border-radius:50%;
+  background-color:#FFFFFF;
+  }
+ .numbers {
+  position:absolute;
+  font-size:20px;
+  color:#F5F5DC
+ }
+ .one {
+  top:10px;
+  left:102px;
+ }
+  .two {
+  top:34px;
+  left:124px;
+ }
+ .three {
+  top:65px;
+  left:135px;
+ }
+ .four {
+  top:95px;
+  left:124px;
+ }
+ .five {
+  top:118px;
+  left:102px;
+ }
+ .six {
+  top:127px;
+  left:72px;
+ }
+ .seven {
+  top:120px;
+  left:42px;
+ }
+ .eight {
+  top:97px;
+  left:18px;
+ }
+ .nine {
+  top:65px;
+  left:8px;
+ }
+ .ten {
+  top:34px;
+  left:15px;
+ }
+  .eleven {
+  top:10px;
+  left:35px;
+ }
+ .twelve {
+ top:0px;
+  left:65px;
+ }
+
+.something {
+height:50px;
+width:15px;
+border-radius:2px;
+background-color:#808080;
+}
+.somethingLeft {
+position:absolute;
+top: 650px;
+left:300px;
+}
+.somethingRight {
+position:absolute;
+top: 620px;
+left:350px;
+}
+.somethingLeft::before {
+  content:'';
+position:absolute;
+top:-100px;
+height:100px;
+width:2px;
+left:7px;
+background-color:#B8860B;
+}
+.somethingRight::before {
+  content:'';
+position:absolute;
+top:-70px;
+height:70px;
+width:1px;
+left:7px;
+background-color:#B8860B;
+}
+.ticker::after {
+  content:'';
+   position:absolute;
+  top:80px;
+  left:-20px;
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  background-color:#DAA520;
+  z-index:999;
+  }
+  .ticker {
+       position:relative;
+         top:148px;
+  left:330px;
+    height:82px;
+  width:5px;
+    background-color:#708090;
+    z-index:999;
+        transform: rotate(45deg);
+  animation:tick 2s infinite steps(120);
+transform-origin: top center;
+  }
+@keyframes tick {
+ 50% { transform:rotate(-50deg) }
+ 100% { transform:rotate(50deg) }
+}
