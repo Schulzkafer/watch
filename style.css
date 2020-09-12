@@ -2,39 +2,39 @@
   padding:0;
   margin:0;
 }
+
 .wallpaper {
   height:100vh;
   width:100%;
-  background-color:pink;
+  background-color:#FFA07A;
 }
 
+.blockColor {
+  border-radius:4px;
+  background-color: #8B4513;
+  z-index:100;
+}
 
-      .blockColor {
-        border-radius:4px;
-       background-color: #8B4513;
-       z-index:100;
-              }
+.square {
+  position:relative;
+  height:300px;
+  width:250px;
+  top:150px;
+  left:200px;
+  background-color: #CD853F;
+  border-radius:0 0 10px 10px;
+}
 
-              .square {
-                position:relative;
-                height:300px;
-                width:250px;
-                top:150px;
-                left:200px;
-                background-color: #CD853F;
-                border-radius:0 0 10px 10px;
-              }
-
-              .triangle {
-                position:relative;
-                top:150px;
-                left:185px;
-                width: 0;
+.triangle {
+  position:relative;
+  top:150px;
+  left:185px;
+  width: 0;
   height: 0;
   border-left: 140px solid transparent;
   border-right: 140px solid transparent;
   border-bottom: 100px solid #CD853F;
-              }
+}
 
 .hole {
   position:absolute;
@@ -45,7 +45,18 @@
   border-radius:20px 20px 4px 4px;
   background-color:#FFFFF0;
   z-index:444;
+  line-height: 70px;
+  border: 1px solid #BC8F8F;
+  text-align: center;
 }
+
+.cuckoo {
+  height:20px; 
+  width:20px;
+  z-index:555;
+  transition: all 0.5s ease-out;
+}
+
 .door {
   position:absolute;
   top:60px;
@@ -54,45 +65,43 @@
   width:40px;
   border-radius:20px 20px 4px 4px;
   background-color:#DEB887;
-  z-index:555;
+  z-index:666;
+  border: 1px solid #BC8F8F;
   transition: all 0.5s ease-out;
   transform-origin: left center;
-  transition: background-color 0.25s linear 0.25s:
+  cursor: pointer;
 }
-
-
-
-
 
 .top-left-block {
-    position:absolute;
+  position:absolute;
   top:85px;
   left:260px;
-height:210px;
-width:20px;
- background-color: #A0522D;
+  height:210px;
+  width:20px;
+  background-color: #A0522D;
   transform: rotate(55deg);
-/* z-index:100;*/
 }
+
 .top-right-block {
-    position:absolute;
+  position:absolute;
   top:85px;
   left:370px;
-height:210px;
-width:20px;
- background-color: #A0522D;
+  height:210px;
+  width:20px;
+  background-color: #A0522D;
   transform: rotate(-55deg);
-/* z-index:100;*/
 }
+
 .bottom-block {
-      position:absolute;
+  position:absolute;
   top:370px;
   left:315px;
-height:280px;
-width:20px;
- background-color: #A0522D;
- transform: rotate(90deg);
+  height:280px;
+  width:20px;
+  background-color: #A0522D;
+  transform: rotate(90deg);
 }
+
 .circle {
   position:absolute;
   top:50px;
@@ -102,6 +111,7 @@ width:20px;
   border-radius:50%;
   background-color: #D2691E;
 }
+
 .hour-arrow {
   position:absolute;
   top:40px;
@@ -110,8 +120,6 @@ width:20px;
   width:10px;
   border-radius:2px;
   background-color: #FFFFFF;
-/*    transform: rotate(180deg);*/
-/*  animation: hour 216000s infinite steps(60);*/
   transform-origin: bottom center;
 }
 
@@ -122,10 +130,10 @@ width:20px;
   height:50px;
   width:5px;
   border-radius:2px;
-  background-color: #FFFFFF;/* #F5DEB3;*/
-  /*animation: min 3600s infinite steps(60);*/
+  background-color: #FFFFFF;
   transform-origin: bottom center;
 }
+
 .seconds-arrow {
   position:absolute;
   top:20px;
@@ -133,8 +141,7 @@ width:20px;
   height:60px;
   width:3px;
   border-radius:2px;
-  background-color: #F5DEB3;/* #F5DEB3;*/
- /* animation: sec 60s infinite steps(60);*/
+  background-color: #F5DEB3;
   transform-origin: bottom center;
 }
 
@@ -146,98 +153,116 @@ width:20px;
   width:25px;
   border-radius:50%;
   background-color:#FFFFFF;
-  }
- .numbers {
+}
+
+.numbers {
   position:absolute;
   font-size:20px;
   color:#F5F5DC
- }
- .one {
+}
+
+.one {
   top:10px;
   left:102px;
- }
-  .two {
+}
+
+.two {
   top:34px;
   left:124px;
- }
- .three {
+}
+
+.three {
   top:65px;
   left:135px;
- }
- .four {
+}
+
+.four {
   top:95px;
   left:124px;
- }
- .five {
+}
+
+.five {
   top:118px;
   left:102px;
- }
- .six {
+}
+
+.six {
   top:127px;
   left:72px;
- }
- .seven {
+}
+
+.seven {
   top:120px;
   left:42px;
- }
- .eight {
+}
+
+.eight {
   top:97px;
   left:18px;
- }
- .nine {
+}
+
+.nine {
   top:65px;
   left:8px;
- }
- .ten {
+}
+
+.ten {
   top:34px;
   left:15px;
- }
-  .eleven {
+}
+
+.eleven {
   top:10px;
   left:35px;
- }
- .twelve {
+}
+
+.twelve {
  top:0px;
-  left:65px;
- }
+ left:65px;
+}
 
 .something {
-height:50px;
-width:15px;
-border-radius:2px;
-background-color:#808080;
+  height:50px;
+  width:15px;
+  border-radius:2px;
+  background-color:#808080;
 }
+
 .somethingLeft {
-position:absolute;
-top: 650px;
-left:300px;
+  position:absolute;
+  top: 650px;
+  left:300px;
 }
+
 .somethingRight {
-position:absolute;
-top: 620px;
-left:350px;
+  position:absolute;
+  top: 620px;
+  left:350px;
 }
+
 .somethingLeft::before {
   content:'';
-position:absolute;
-top:-100px;
-height:100px;
-width:2px;
-left:7px;
-background-color:#B8860B;
+  position:absolute;
+  top:-100px;
+  height:100px;
+  width:2px;
+  left:7px;
+  background-color:#B8860B;
 }
+
 .somethingRight::before {
   content:'';
-position:absolute;
-top:-70px;
-height:70px;
-width:1px;
-left:7px;
-background-color:#B8860B;
+  position:absolute;
+  top:-70px;
+  height:70px;
+  width:1px;
+  left:7px;
+  background-color:#B8860B;
 }
+
 .ticker::after {
   content:'';
-   position:absolute;
+  position:absolute;
   top:80px;
   left:-20px;
   height:50px;
@@ -245,19 +270,21 @@ background-color:#B8860B;
   border-radius:50%;
   background-color:#DAA520;
   z-index:999;
-  }
-  .ticker {
-       position:relative;
-         top:148px;
-  left:330px;
-    height:82px;
-  width:5px;
-    background-color:#708090;
-    z-index:999;
-        transform: rotate(45deg);
-  animation:tick 2s infinite steps(120);
-transform-origin: top center;
-  }
+}
+
+.ticker {
+ position:relative;
+ top:148px;
+ left:330px;
+ height:82px;
+ width:5px;
+ background-color:#708090;
+ z-index:999;
+ transform: rotate(45deg);
+ animation:tick 2s infinite steps(120);
+ transform-origin: top center;
+}
+
 @keyframes tick {
  50% { transform:rotate(-50deg) }
  100% { transform:rotate(50deg) }
